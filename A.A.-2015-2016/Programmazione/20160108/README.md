@@ -1,5 +1,7 @@
 # Lezione del 8 gennaio 2016
 
+![lavagna](./II_BN_20160108.jpg)
+
 * Progetto Bianco: **Connettore arduino-OSC**
   * Node.java
     ```java
