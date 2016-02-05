@@ -1,24 +1,35 @@
-import cc.arduino.*;
+import org.firmata.Firmata;
 
-class Pin{
+public class Pin{
     
     public int lastValue;
     public String tag;
-    public Arduino ard;
+    public Firmata firm;
+    public int pin;
     
-    Pin(String type, int num, Arduino a){
-        tag=type+(String)num;
-        ard=a;
+    public class FirmataWriter implements Firmata.Writer {
+    public void write(int val) {
+      //not implemented yet
+    }
+  }
+    public  Pin(String type, int num){
+        this.firm = new Firmata(new FirmataWriter());
+        this.tag = type+String.valueOf(num);
+        this.pin = num;
     }
     
-    boolean hasChanged(){
-        
+    public boolean hasChanged(int v){
+        return (v != lastValue);
     }
     
-    int value(){
+    public int read(){
+        return 0; //does nothing succesfully
+    }
+    
+    public int value(){
         int res;
-        //code
-        res = hasChanged() ? (lastValue = v):lastValue;
+        int v = read();
+        res = hasChanged(v) ? (lastValue = v):lastValue;
         return res;
     }
 }
