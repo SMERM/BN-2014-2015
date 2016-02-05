@@ -59,4 +59,5 @@ f4=a0-a1*(cos(2*pi*(0:winsize-1)/(winsize-1)))+a2*(cos(4*pi*(0:winsize-1)/(winsi
 ffts=myFFT(f4,fftwinsize, fc);
 figure(7)
 plot(Ffreq, ffts)
+
 axis ([-xzoom xzoom -140 0])

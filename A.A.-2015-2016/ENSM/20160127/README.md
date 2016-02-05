@@ -3,11 +3,9 @@
 ## Argomenti
 
 * correzione del compito:
-  * Realizzare le finestre e le analisi di queste con la misura della larghezza del lobo centrale e del rapporto segnale-rumore tra lobo centrale e lobi laterali
-* risoluzione frequenziale
-  * calcolo
-  * interpolazione frequenziale (?)
-* STFT:
-  * problematiche di risoluzione
-  * *trade-offs*
-* spettrogrammi
+  * Realizzare le finestre [calcolo](./myFFT.m) e [driver](./windows_1.m)
+  
+## Compiti per casa
+
+* analisi di queste con la misura della larghezza del lobo centrale e del rapporto segnale-rumore tra lobo centrale e lobi laterali
+  (hint: derivata delle funzioni finestra, ecc.)

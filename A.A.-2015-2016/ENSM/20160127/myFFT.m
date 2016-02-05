@@ -1,3 +1,4 @@
+
 function ffts=myFFT(w, fftw, fc)
 
     sinc=1/fc;
@@ -17,4 +18,3 @@ function ffts=myFFT(w, fftw, fc)
     dBFF=20*log10(abs(F)/winsize);
     ffts=fftshift(dBFF);
 end
-
