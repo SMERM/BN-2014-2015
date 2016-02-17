@@ -12,3 +12,8 @@
   * problematiche di risoluzione
   * *trade-offs*
 * spettrogrammi
+
+## Compito per casa
+
+* misurare il rapporto segnale rumore di tutte le altre finestre
+* misurare la larghezza della finestra (non-interpolata)
