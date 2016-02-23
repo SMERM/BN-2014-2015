@@ -2,7 +2,5 @@
 
 ## Argomenti
 
-* Progetto Bianco: **Connettore arduino-OSC**
+* Progetto Bianco: **Connettore arduino-OSC** ([`switch`](https://github.com/frabia/Switch))
   * strumentazione del progetto (compilazione con `ant`)
-  * testing (`junit`?)
-  * realizzazione del `container Switch`
